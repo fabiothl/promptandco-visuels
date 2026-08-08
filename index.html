@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt &amp; Co — tous nos réseaux</title>
+<meta name="description" content="Ton média quotidien sur l'intelligence artificielle. Les nouveautés qui comptent. Deux posts par jour, vérifiés et sourcés.">
+<meta property="og:title" content="Prompt &amp; Co — tous nos réseaux">
+<meta property="og:description" content="Ton média quotidien sur l'intelligence artificielle. Les nouveautés qui comptent. Deux posts par jour, vérifiés et sourcés.">
+<meta property="og:image" content="og.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url(fonts/space-grotesk.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 100 800;
+    font-display: swap;
+    src: url(fonts/jetbrains-mono.woff2) format('woff2');
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; border-radius: 0; }
+  :root {
+    --nuit: #1a1c16;
+    --nuit: oklch(0.17 0.012 140);
+    --craie: #f4f5f1;
+    --craie: oklch(0.96 0.004 140);
+    --vert: #BDEE3C;
+    --vert: oklch(0.86 0.17 118);
+    --gris: #4c4e47;
+    --gris: oklch(0.42 0.01 140);
+    --gris-doux: #8b8d85;
+    --gris-doux: oklch(0.62 0.008 140);
+  }
+  body {
+    background: var(--nuit);
+    color: var(--craie);
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 56px 20px 48px;
+  }
+  .page {
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    width: 92px; height: 92px;
+    display: block;
+  }
+  .marque {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px; font-weight: 700;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    margin-top: 26px;
+  }
+  .titre {
+    font-size: clamp(22px, 7vw, 30px); font-weight: 700;
+    letter-spacing: -0.03em; line-height: 1.25;
+    text-align: center;
+    margin-top: 18px;
+  }
+  .titre .surligne {
+    background: var(--vert);
+    color: var(--nuit);
+    padding: 0 8px;
+    white-space: nowrap;
+  }
+  .sousligne {
+    font-size: 15px; font-weight: 400;
+    color: var(--gris-doux);
+    text-align: center;
+    margin-top: 12px;
+  }
+  .liens {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .lien {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    border: 1px solid var(--gris);
+    padding: 17px 20px;
+    text-decoration: none;
+    color: var(--craie);
+    transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+  }
+  .lien:hover, .lien:focus-visible {
+    background: var(--vert);
+    border-color: var(--vert);
+    color: var(--nuit);
+    outline: none;
+  }
+  .lien .reseau {
+    font-size: 17px; font-weight: 600;
+    letter-spacing: -0.01em;
+    flex-shrink: 0;
+  }
+  .lien .handle {
+    min-width: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px; font-weight: 400;
+    color: var(--gris-doux);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: color 0.12s ease;
+  }
+  .lien:hover .handle, .lien:focus-visible .handle {
+    color: var(--nuit);
+  }
+  .pied {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--gris-doux);
+    margin-top: 44px;
+    letter-spacing: 0.08em;
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <img class="logo" src="logo.png" alt="Prompt &amp; Co" width="92" height="92">
+  <div class="marque">Prompt &amp; Co</div>
+  <h1 class="titre">Ton média quotidien sur <span class="surligne">l'intelligence artificielle</span></h1>
+  <p class="sousligne">Les nouveautés qui comptent. Deux posts par jour, vérifiés et sourcés.</p>
+
+  <nav class="liens">
+    <a class="lien" href="https://x.com/promptandco_">
+      <span class="reseau">X</span>
+      <span class="handle">@promptandco_</span>
+    </a>
+    <a class="lien" href="https://www.instagram.com/promptandco_/">
+      <span class="reseau">Instagram</span>
+      <span class="handle">@promptandco_</span>
+    </a>
+    <a class="lien" href="https://www.threads.com/@promptandco_">
+      <span class="reseau">Threads</span>
+      <span class="handle">@promptandco_</span>
+    </a>
+    <a class="lien" href="https://www.tiktok.com/@promptandco_">
+      <span class="reseau">TikTok</span>
+      <span class="handle">@promptandco_</span>
+    </a>
+    <a class="lien" href="https://bsky.app/profile/promptandco.bsky.social">
+      <span class="reseau">Bluesky</span>
+      <span class="handle">@promptandco.bsky.social</span>
+    </a>
+    <!-- LinkedIn : ajouter dès que l'URL de la Page est connue
+    <a class="lien" href="">
+      <span class="reseau">LinkedIn</span>
+      <span class="handle">Prompt &amp; Co</span>
+    </a>
+    -->
+    <a class="lien" href="https://www.facebook.com/profile.php?id=61593162117133">
+      <span class="reseau">Facebook</span>
+      <span class="handle">Prompt &amp; Co</span>
+    </a>
+    <a class="lien" href="https://www.pinterest.com/promptco98/">
+      <span class="reseau">Pinterest</span>
+      <span class="handle">Faits insolites de l'IA</span>
+    </a>
+  </nav>
+
+  <div class="pied">promptandco</div>
+</main>
+</body>
+</html>
